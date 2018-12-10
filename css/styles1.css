@@ -1,20 +1,28 @@
 /*
 blue #8CFBDE
-gray #8B94A3
-dark gray #454851
+darker blue #3ABEFF
+dark gray #373F51
 orange #FE621D
+middle blue green #ACDDE7
+link color #0B4F6C
+header color #01BAEF
 */
 
 
+html{
+  box-sizing: border-box;
+}
 
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 
 body{
-  background: #8B94A3;
+ margin: 0;
 }
 
 h1, h2, h3, a, p{
   font-family: 'Oswald', sans-serif;
-  text-align: center;
 }
 
 h1 {
@@ -26,6 +34,7 @@ h1 {
 h2{
 font-size: 35px;
 font-weight: 600;
+margin-top: 0px;
 }
 
 h3{
@@ -34,14 +43,7 @@ font-weight: 600;
 }
 
 p{
-font-size: 20px;
-line-height: 25px;
-width: 1000px;
-margin: 0px;
-}
-
-a{
-  color: #FE621D;
+  font-size: 20px;
 }
 
 a:hover{
@@ -49,21 +51,58 @@ a:hover{
 }
 
 
-header, footer {
-  background: #8CFBDE;
-  width: 1000px;
+header {
+  background: #01BAEF;
   margin: 0 auto;
 }
+header h1, header h2{
+  color: black;
+  margin: 0;
+}
 
-.Work{
+.profile{
+  border-radius: 50%;
+}
+
+footer{
+  text-align: center;
+  margin: auto;
+  background: #031926;
+  color: #ACDDE7;
+}
+
+
+.work{
   background:#8CFBDE
   }
 
-.Education{
-  background:#8CFBDE
+.education{
+  background:#ACDDE7
 }
 
 .content-wrap{
-  width: 600px;
+  max-width: 950px;
   margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+
+.col-narrow{
+  width: 30%;
+  float: left;
+  min-height: 100px;
+
+}
+
+.col-wide{
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  min-height: 175px;
+}
+
+.contact-info a {
+  padding: 15px;
+  display: inline-block;
+  color: white;
 }
