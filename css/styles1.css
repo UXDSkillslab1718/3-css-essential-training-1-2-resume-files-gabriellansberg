@@ -40,6 +40,7 @@ margin-top: 0px;
 h3{
 font-size: 25px;
 font-weight: 600;
+margin: 0;
 }
 
 p{
@@ -76,8 +77,24 @@ footer{
   background:#8CFBDE
   }
 
+h3 ~ p{
+  margin: 0;
+}
+
+.job{
+  margin-top: 25px;
+}
+
+.job p:first-of-type{
+  margin-top: 0;
+}
+
 .education{
   background:#ACDDE7
+}
+
+p + h3{
+margin-top: 30px;
 }
 
 .content-wrap{
@@ -90,19 +107,20 @@ footer{
 .col-narrow{
   width: 30%;
   float: left;
-  min-height: 100px;
-
 }
 
 .col-wide{
   width: 70%;
   float: left;
   padding-left: 20px;
-  min-height: 175px;
 }
 
 .contact-info a {
   padding: 15px;
   display: inline-block;
   color: white;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
