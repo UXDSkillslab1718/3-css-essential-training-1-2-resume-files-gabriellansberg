@@ -54,9 +54,9 @@ a:hover{
 
 header {
   padding-top: 50px;
-  background: #01BAEF;
   margin: 0 auto;
   position: relative;
+  background: #01BAEF;
 }
 
 nav{
@@ -111,7 +111,10 @@ h3 ~ p{
 }
 
 .education{
-  background:#ACDDE7
+  background: linear-gradient(rgba(141,153,174,0), rgba(141,153,174,0)),
+  url(../RoccaalMareKool1999-2000.jpg) no-repeat fixed;
+  background-size: cover;
+  color: white;
 }
 
 p + h3{
