@@ -128,17 +128,6 @@ margin-top: 30px;
   overflow: auto;
 }
 
-.col-narrow{
-  width: 30%;
-  float: left;
-}
-
-.col-wide{
-  width: 70%;
-  float: left;
-  padding-left: 20px;
-}
-
 .contact-info a {
   padding: 15px;
   display: inline-block;
@@ -161,4 +150,25 @@ margin-top: 30px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media(min-width:900px){
+  .col-narrow{
+    width: 30%;
+    float: left;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 899px) {
+  header{
+    text-align: center;
+  }
+  .profile{
+    width: 200px;
+  }
 }
