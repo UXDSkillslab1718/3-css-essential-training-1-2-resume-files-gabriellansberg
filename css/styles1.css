@@ -53,8 +53,29 @@ a:hover{
 
 
 header {
+  padding-top: 50px;
   background: #01BAEF;
   margin: 0 auto;
+  position: relative;
+}
+
+nav{
+  text-align: center;
+  background: #031926;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a{
+  border-radius: 5%;
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 header h1, header h2{
   color: black;
@@ -100,7 +121,7 @@ margin-top: 30px;
 .content-wrap{
   max-width: 950px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 60px 50px;
   overflow: auto;
 }
 
@@ -123,4 +144,18 @@ margin-top: 30px;
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.btn{
+  text-decoration: none;
+  color: white;
+  background: #031926;
+  padding: 10px;
+  display: inline-block;
+}
+
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
